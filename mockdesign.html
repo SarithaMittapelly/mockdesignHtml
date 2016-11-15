@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="bootstraptheame.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <style>
+        li{
+            list-style: none;
+            font-size: 1em;
+
+        }
+        .navitems{
+            display: inline-block;
+            padding:10px;
+            float:right;
+            color:white;
+            margin-left: 10px;
+        }
+        h3{
+            display:inline-block;
+        }
+        div{
+            margin-top:8px;
+        }
+        .btn-sm, .btn-group-sm>.btn {
+            padding: 1px 5px !important;
+            font-size: 10px !important;
+            line-height: 1 !important;
+            margin-top: 0px !important;
+            border-radius: 3px;
+        }
+        .panel-footer{
+            height:25px;
+        }
+        .panel{
+            height:50% !important;
+        }
+        input{
+            width:100%;
+        }
+        body{
+
+        }
+        #tab  li {
+            width:20%;
+            background-color: lightgrey !important;
+        }
+        .nav li a {
+            padding:5px ! important;
+            margin-bottom: 2px !  important;
+            margin-left:5px;
+            margin-right:5px;
+            font-size:small;
+            text-align: center;
+        }
+        div.panel-body{
+            padding:2px !important;
+            margin:2px 1px 1px 1px;
+        }
+        div.panel-footer{
+            padding:5px !important;
+            margin-top: 2px !important;
+        }
+
+        .effect5
+        {
+            position: relative;
+        }
+        .effect5:before, .effect5:after
+        {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 25px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width:300px;
+            background: #777;
+            -webkit-box-shadow: 0 35px 20px #777;
+            -moz-box-shadow: 0 35px 20px #777;
+            box-shadow: 0 35px 20px #777;
+            -webkit-transform: rotate(-8deg);
+            -moz-transform: rotate(-8deg);
+            -o-transform: rotate(-8deg);
+            -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+        .effect5:after
+        {
+            -webkit-transform: rotate(8deg);
+            -moz-transform: rotate(8deg);
+            -o-transform: rotate(8deg);
+            -ms-transform: rotate(8deg);
+            transform: rotate(8deg);
+            right: 10px;
+            left: auto;
+        }
+        .modal-header{
+            padding:2px !important;
+            margin-left: 10px;
+        }
+        .modal-footer{
+            padding:5px !important;
+        }
+body{
+    font-family: "Segoe UI","Segoe UI","Verdana";
+    font-weight: 400;
+}
+        @media (min-width: 495px){
+            .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        }
+        .navbar-header div{
+        display: inline-block !important;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+<nav class="narbar navbar-fixed-top navbar-inverse navbar-toggler">
+
+
+    <div class="navbar-header"> <h3  style="color:white;margin:0 auto"><span>&nbsp;&nbsp;&nbsp;Demo Company</span></h3></div>
+     <div class="nav navbar-collapse">
+    <ul >
+        <li  class="navitems"> <span class="glyphicon glyphicon-log-out"></span><br/>Logout</li>
+        <li  class="navitems"> <span class="glyphicon glyphicon-export"></span><br/>Export</li>
+        <li  class="navitems"> <span class="glyphicon glyphicon-envelope"></span><br/>Contact</li>
+        <li  class="navitems"> <span class="glyphicon glyphicon-question-sign"></span><br/>Help</li>
+
+        <li  class="navitems"> <span class="glyphicon glyphicon-home"></span><br/>Home</li>
+
+    </ul>
+     </div>
+
+</nav>
+
+
+<div class=" container-fluid" style="margin-top: 55px">
+   <ul   id="tab" class="nav nav-pills">
+              <li class="active"><a data-toggle="tab" href="#business">Business</a> </li>
+              <li ><a data-toggle="tab" href="#financials">Financials</a> </li>
+             <li><a data-toggle="tab" href="#hr">HR</a> </li>
+       <li><a data-toggle="tab" href="#submitdata">Submit All Data</a> </li>
+
+   </ul>
+
+
+<div class="tab-content">
+<div class="tab-pane fade in active" id="business">
+    <div class="effect5">
+
+    <div  class="panel panel-primary ">
+
+        <div class="panel-body">
+
+        <span style="font-size: smaller;font-family: cursive"><strong>BUSINESS -50% - Tell us about your company</strong></span>
+
+
+    <table class="table table-responsive  table-striped" data-toggle="table"  data-row-style="rowStyle">
+        <thead style="color:white;" class="navbar-inverse">
+         <tr><td></td>
+             <td></td>
+        <td><strong>2012</strong></td>
+         <td><strong>2013</strong></td>
+        <td><strong>2014</strong></td>
+         <td><strong>2015</strong></td>
+             <td></td>
+         </tr>
+        </thead>
+        <tbody>
+        <tr class="">
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"> <i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Years in business</td>
+            <td>10-25</td>
+            <td>10-25</td>
+            <td>25-50</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"> <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Corporate Structure</td>
+            <td>5-Corporation</td>
+            <td>5-Corporation</td>
+            <td>5-Corporation</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Manufacturing space</td>
+            <td>10,000-30,000</td>
+            <td>10,000-30,000</td>
+            <td>10,000-30,000</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Building ownership</td>
+            <td>Own</td>
+            <td>Own</td>
+            <td>Own</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Number of full-time equivalent employees-today</td>
+            <td>27</td>
+            <td>0</td>
+            <td>41</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Number of full-time employees-anticipated in</td>
+            <td>27</td>
+            <td>0</td>
+            <td>41</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>percent of employees which are union</td>
+            <td>0.000%</td>
+            <td>50.000%</td>
+            <td>0.00%</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Capital expenditures -last  12 months</td>
+            <td>less than $50,000</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Capital expenditures -anticipated next  12 months</td>
+            <td>less than $50,000</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Bid hit rate(%of proposals which are successful)</td>
+            <td>10% - 30%</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Installation model</td>
+            <td>0% internal (we..</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Subcontracting work to others is important to us</td>
+            <td>Strongly Disagree</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Subcontracting work to others is important to us</td>
+            <td>Somewhat Disagree</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+            <td>Percent of hours which are considered 'direct lab</td>
+            <td>80.000%</td>
+            <td>0.000%</td>
+            <td>0.000%</td>
+            <td><input type="text" ngmodel="value"></td>
+            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+        <div class="panel-footer">
+
+            <button class="btn btn-default btn-sm  " style="float:right"><strong>Forward</strong></button>
+            <button class="btn-default btn btn-sm" style="float:right">Back Later</button>
+            <button class="btn btn-default btn-sm" style="float:right"><strong><< Back</strong></button>
+            <span style="color:blue;float:right;margin-right: 5px;">Contact AWI Committee</span>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <div class="tab-pane fade in " id="financials">
+        <div class="effect5">
+
+            <div  class="panel panel-primary ">
+
+                <div class="panel-body">
+
+                    <span style="font-size: smaller;font-family: cursive"><strong>BUSINESS -50% - Tell us about your company</strong></span>
+
+
+                    <table class="table table-responsive  table-striped" data-toggle="table"  data-row-style="rowStyle">
+                        <thead style="color:white;" class="navbar-inverse">
+                        <tr><td></td>
+                            <td></td>
+                            <td><strong>2012</strong></td>
+                            <td><strong>2013</strong></td>
+                            <td><strong>2014</strong></td>
+                            <td><strong>2015</strong></td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="">
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"> <i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Years in business</td>
+                            <td>10-25</td>
+                            <td>10-25</td>
+                            <td>25-50</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"> <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Corporate Structure</td>
+                            <td>5-Corporation</td>
+                            <td>5-Corporation</td>
+                            <td>5-Corporation</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Manufacturing space</td>
+                            <td>10,000-30,000</td>
+                            <td>10,000-30,000</td>
+                            <td>10,000-30,000</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Building ownership</td>
+                            <td>Own</td>
+                            <td>Own</td>
+                            <td>Own</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Number of full-time equivalent employees-today</td>
+                            <td>27</td>
+                            <td>0</td>
+                            <td>41</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Number of full-time employees-anticipated in</td>
+                            <td>27</td>
+                            <td>0</td>
+                            <td>41</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>percent of employees which are union</td>
+                            <td>0.000%</td>
+                            <td>50.000%</td>
+                            <td>0.00%</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Capital expenditures -last  12 months</td>
+                            <td>less than $50,000</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Capital expenditures -anticipated next  12 months</td>
+                            <td>less than $50,000</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Bid hit rate(%of proposals which are successful)</td>
+                            <td>10% - 30%</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Installation model</td>
+                            <td>0% internal (we..</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Subcontracting work to others is important to us</td>
+                            <td>Strongly Disagree</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Subcontracting work to others is important to us</td>
+                            <td>Somewhat Disagree</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-toggle="tooltip" title="Hello this is sample text"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></a></td>
+                            <td>Percent of hours which are considered 'direct lab</td>
+                            <td>80.000%</td>
+                            <td>0.000%</td>
+                            <td>0.000%</td>
+                            <td><input type="text" ngmodel="value"></td>
+                            <td><a class="btn btn-sm" data-toggle="modal" data-target="#mymodel"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="panel-footer">
+
+                    <button class="btn btn-default btn-sm  " style="float:right"><strong>Forward</strong></button>
+                    <button class="btn-default btn btn-sm" style="float:right">Back Later</button>
+                    <button class="btn btn-default btn-sm" style="float:right"><strong><< Back</strong></button>
+                    <span style="color:blue;float:right;margin-right: 5px;">Contact AWI Committee</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade " id="submitdata">
+        <h2>This is a sample page</h2>
+    </div>
+
+
+    <div class="tab-pane fade" id="hr">
+        <h2>This is sample page</h2>
+    </div>
+</div>
+
+    <div class="footer navbar-inverse navbar-fixed-bottom container-fluid">
+        <span style="color:white">Another AWI Member Benefit</span>
+        <span style="color:white;float:right">V06.6.1.0</span>
+    </div>
+    <div id="mymodel" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal>&times"></button>
+
+                    <h5>Enter Comments</h5>
+                </div>
+                <div class="modal-body">
+                   <textarea id="comments" placeholder="Enter Comments" rows="5" cols="45"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button  style="margin-right: 10px;" class="btn  btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+      $(document).ready(function(){
+          $('[datatoggle="tooltip"]').tooltip();
+
+          $('#mymodel').model({
+              autoOpen:false
+
+          })
+
+      })
+</script>
+</body>
+
+</html>
