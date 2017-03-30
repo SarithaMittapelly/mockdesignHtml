@@ -7,3 +7,116 @@
 body{
     font-size: 10px !important;
 }
+li{
+    list-style: none;
+    font-size: 1em;
+
+}
+.navitems{
+    display: inline-block;
+    padding:10px;
+    float:right;
+    color:white;
+    margin-left: 10px;
+}
+h3{
+    display:inline-block;
+}
+div{
+    margin-top:8px;
+}
+.btn-sm, .btn-group-sm>.btn {
+    padding: 1px 5px !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+    margin-top: 0px !important;
+    border-radius: 3px;
+}
+.panel-footer{
+    height:25px;
+}
+.panel{
+    height:50% !important;
+}
+input{
+    width:100%;
+}
+body{
+
+}
+#tab  li {
+    width:20%;
+    background-color: lightgrey !important;
+}
+.nav li a {
+    padding:5px ! important;
+    margin-bottom: 2px !  important;
+    margin-left:5px;
+    margin-right:5px;
+    font-size:small;
+    text-align: center;
+}
+div.panel-body{
+    padding:2px !important;
+    margin:2px 1px 1px 1px;
+}
+div.panel-footer{
+    padding:5px !important;
+    margin-top: 2px !important;
+}
+
+.effect5
+{
+    position: relative;
+}
+.effect5:before, .effect5:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.effect5:after
+{
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}
+.modal-header{
+    padding:2px !important;
+    margin-left: 10px;
+}
+.modal-footer{
+    padding:5px !important;
+}
+body{
+    font-family: "Segoe UI","Segoe UI","Verdana";
+    font-weight: 400;
+}
+@media (min-width: 495px){
+    .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.navbar-header div{
+    display: inline-block !important;
+}
+
